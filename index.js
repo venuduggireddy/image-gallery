@@ -14,7 +14,6 @@ function getFiles (dir, files_){
           if(name.search(".png") != -1) {
             files_.push(name);
           }
-
         }
     }
     return files_;
@@ -29,8 +28,7 @@ http.createServer(function(req, res){
      res.writeHead(200, {'Content-Type': 'text/html' });
      res.write(util.format("List of images in %s </br><div>", dir));
      files.forEach(function(file){
-       var img = util.format("<img src='/img?p=%s'/></br>", file);
-       res.write(img);
+       res.write( util.format("<img src='/img?p=%s'/></br>", file));
      });
      res.end("</div>");
   }else if(action == '/img'){
