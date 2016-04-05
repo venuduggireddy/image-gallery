@@ -4,12 +4,15 @@
   "description": "Image viewer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/jshint/bin/jshint index.js"
   },
   "keywords": [
     "img",
     "browser"
   ],
   "author": "venu duggireddy",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jshint": "~2.9.1"
+  }
 }
