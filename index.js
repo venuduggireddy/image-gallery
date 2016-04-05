@@ -26,7 +26,7 @@ http.createServer(function(req, res){
   if (action == '/list') {
      var files = getFiles(dir);
      res.writeHead(200, {'Content-Type': 'text/html' });
-     res.write(util.format("List of images in %s </br><div>", dir));
+     res.write(util.format("List of PNG files in %s </br><div>", dir));
      files.forEach(function(file){
        res.write( util.format("<img src='/img?p=%s'/></br>", file));
      });
