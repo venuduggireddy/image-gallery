@@ -1,5 +1,7 @@
 
  [![Build Status](https://travis-ci.org/venuduggireddy/image-gallery.svg?branch=master)](https://travis-ci.org/venuduggireddy/image-gallery)
+ 
+ 
  [![Sauce Test Status](https://saucelabs.com/browser-matrix/vduggireddy.svg)](https://saucelabs.com/u/vduggireddy)
 
 # image-gallery 
@@ -15,4 +17,4 @@ update the varaible dir in index.js file with location of png images directory
 node index.js
 ```
 
-Open http://localhost:8090/list 
+In browser open the following URL http://localhost:8090/
