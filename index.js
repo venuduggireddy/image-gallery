@@ -3,6 +3,11 @@ http = require('http'),
 url = require('url'),
 util = require('util');
 
+var PORT = 8090;
+var DIR_LOC = './images';
+
+
+
 function getFiles (dir, files_){
     files_ = files_ || [];
     var files = fs.readdirSync(dir);
@@ -19,7 +24,7 @@ function getFiles (dir, files_){
     return files_;
 }
 
-http.createServer(function(req, res){
+var server = http.createServer(function(req, res){
   var request = url.parse(req.url, true);
   var action = request.pathname;
   var dir = "./images";
@@ -39,4 +44,10 @@ http.createServer(function(req, res){
      res.writeHead(200, {'Content-Type': 'text/html' });
      res.end('To List all the images in a directory upate the variable dir and open the <a href="/list" id="list">/\list</a> \n');
   }
-}).listen(8090, '127.0.0.1');
+});
+
+server.listen(PORT, function(){
+  console.log("Server is listining on : http://localhost:%s/", PORT);
+});
+
+module.exports = server;

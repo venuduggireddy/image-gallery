@@ -9,3 +9,6 @@ before_script:
   - sleep 3 # give xvfb some time to start
   - node index.js &  # start a Web server
   - sleep 3 # give Web server some time to bind to sockets, etc
+#script:
+#  - mocha unit # run unit test
+#  - mocah integration # run integration test using saucelabs
