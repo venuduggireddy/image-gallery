@@ -1,5 +1,6 @@
 
  [![Build Status](https://travis-ci.org/venuduggireddy/image-gallery.svg?branch=master)](https://travis-ci.org/venuduggireddy/image-gallery)
+ [![Sauce Test Status](https://saucelabs.com/browser-matrix/vduggireddy.svg)](https://saucelabs.com/u/vduggireddy)
 
 # image-gallery 
 NodeJS to display all images in a Directory
