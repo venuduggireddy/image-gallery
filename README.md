@@ -10,3 +10,5 @@ update the varaible dir in index.js file with location of png images directory
 
 node index.js
 ```
+
+Open http://localhost:8090/list 

@@ -1,6 +1,6 @@
-fs = require('fs');
-http = require('http');
-url = require('url');
+var fs = require('fs'),
+http = require('http'),
+url = require('url'),
 util = require('util');
 
 function getFiles (dir, files_){
@@ -36,7 +36,7 @@ http.createServer(function(req, res){
     res.writeHead(200, {'Content-Type': 'image/png' });
     res.end(img, 'binary');
   } else {
-     res.writeHead(200, {'Content-Type': 'text/plain' });
-     res.end('To List all the images in a directory upate the variable dir and open the /\list \n');
+     res.writeHead(200, {'Content-Type': 'text/html' });
+     res.end('To List all the images in a directory upate the variable dir and open the <a href="/list" id="list">/\list</a> \n');
   }
 }).listen(8090, '127.0.0.1');

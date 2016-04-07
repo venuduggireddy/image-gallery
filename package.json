@@ -4,7 +4,7 @@
   "description": "Image viewer",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/jshint/bin/jshint index.js"
+   "test": "mocha --timeout 10000"
   },
   "keywords": [
     "img",
@@ -13,6 +13,8 @@
   "author": "venu duggireddy",
   "license": "MIT",
   "devDependencies": {
-    "jshint": "~2.9.1"
+    "jshint": "~2.9.1",
+    "mocha": "~2.4.5",
+    "selenium-webdriver": "~2.53.1"
   }
 }
