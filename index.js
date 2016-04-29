@@ -16,7 +16,7 @@ function getFiles (dir, files_){
         if (fs.statSync(name).isDirectory()){
             getFiles(name, files_);
         } else {
-          if(name.search(".png") != -1) {
+          if(name.search(".png") !== -1) {
             files_.push(name);
           }
         }
@@ -28,7 +28,7 @@ var server = http.createServer(function(req, res){
   var request = url.parse(req.url, true);
   var action = request.pathname;
   var dir = "./images";
-  if (action == '/list') {
+  if (action === '/list') {
      var files = getFiles(dir);
      res.writeHead(200, {'Content-Type': 'text/html' });
      res.write(util.format("List of PNG files in %s </br><div>", dir));
@@ -36,7 +36,7 @@ var server = http.createServer(function(req, res){
        res.write( util.format("<img src='/img?p=%s'/></br>", file));
      });
      res.end("</div>");
-  }else if(action == '/img'){
+  }else if(action === '/img'){
     var img = fs.readFileSync(request.query.p);
     res.writeHead(200, {'Content-Type': 'image/png' });
     res.end(img, 'binary');
