@@ -1,6 +1,7 @@
 
  [![Build Status](https://travis-ci.org/venuduggireddy/image-gallery.svg?branch=master)](https://travis-ci.org/venuduggireddy/image-gallery)
  [![Code Climate](https://codeclimate.com/github/venuduggireddy/image-gallery/badges/gpa.svg)](https://codeclimate.com/github/venuduggireddy/image-gallery)
+ [![Known Vulnerabilities](https://snyk.io/test/github/venuduggireddy/image-gallery/badge.svg)](https://snyk.io/test/github/venuduggireddy/image-gallery)
  
  
  [![Sauce Test Status](https://saucelabs.com/browser-matrix/vduggireddy.svg)](https://saucelabs.com/u/vduggireddy)
