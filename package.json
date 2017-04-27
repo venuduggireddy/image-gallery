@@ -17,6 +17,7 @@
     "jshint": "~2.9.1",
     "mocha": "~2.4.5",
     "selenium-webdriver": "~2.53.1",
+    "snyk": "^1.25.1",
     "supertest": "^1.2.0"
   }
 }
