@@ -4,7 +4,7 @@
   "description": "Image viewer",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 10000 test/basic.js"
+    "test": "snyk test && mocha --timeout 10000 test/basic.js"
   },
   "keywords": [
     "img",
