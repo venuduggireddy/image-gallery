@@ -47,7 +47,7 @@ describe("Testing Image Gallery", function () {
   });
 
 
-  it("List page should display 3 png images", function (done) {
+  it("List page should display 3 png images only", function (done) {
     var headline = this.browser.findElement(By.id('list'));
     headline.click();
     this.browser.findElements(By.tagName('img')).then(function (imgs) {
