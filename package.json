@@ -1,7 +1,7 @@
 {
-  "name": "imgbrowser",
+  "name": "image-gallery",
   "version": "1.0.0",
-  "description": "Image viewer",
+  "description": "Local directory list Images",
   "main": "index.js",
   "scripts": {
     "test": "snyk test && mocha --timeout 10000 test/basic.js"
