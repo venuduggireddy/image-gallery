@@ -8,7 +8,7 @@
  [![Sauce Test Status](https://saucelabs.com/browser-matrix/vduggireddy.svg)](https://saucelabs.com/u/vduggireddy)
 
 # image-gallery 
-NodeJS to display all images in a Directory. Integrated with Tavis CI, Code Climate, Snyk and Sauce Labs to achive SaaS CI and CI pipe line.
+NodeJS to display all images in a Directory. Integrated with Tavis CI, Code Climate, Snyk and Sauce Labs to use SaaS CI and CD pipe line for open source projects.
 
 To run
 
